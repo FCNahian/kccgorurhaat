@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    transition: 0.4s;
+}
+
+#sidebar .nav-link {
+    font-size: 1.25em;
+}
+
+#sidebar .nav-link:active,
+#sidebar .nav-link:focus,
+#sidebar .nav-link:hover {
+    background-color: gray;
+}
+
+#sidebar .dropdown-menu {
+    background-color: lightgray;
+}
+
+#sidebar .dropdown-item:active,
+#sidebar .dropdown-item:focus,
+#sidebar .dropdown-item:hover {
+    background-color: gray;
+}
+
+#main-body {
+    transition: 0.4s;
+}
+
+.main-body-inactive {
+    margin-left: 250px;
+}
+
+.main-body-active {
+    margin-left: 0px;
+}
+
+.sidebar-inactive {
+    margin-left: -250px;
+}
+
+#sidebar-toggle {
+    -moz-transition: transform 0.35s ease-in-out;
+    -webkit-transition: transform 0.35s ease-in-out;
+    -o-transition: transform 0.35s ease-in-out;
+    -ms-transition: transform 0.35s ease-in-out;
+    transition: transform 0.35s ease-in-out;
+}
+
+.sidebar-toggle-button-rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
